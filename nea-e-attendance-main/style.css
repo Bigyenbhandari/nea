@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.side-bar{
+    height: 100%; 
+    width: 10%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #3065af;
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    padding: 0px 22px 22px;
+    
+}
+.format-logo {
+    padding: 20px 40px 20px;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.main-body{
+    width: 90%;
+    float: right;
+    
+}
+.header{
+    padding: 30px 20px 30px;
+    color: #3065af;
+    
+    margin-top: 5px;
+}
+.header .title h1{
+    font-size: 45px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+}
+.header .sub-title h2{
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+}
+
+.table h1 {
+    background-color: #3065af;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    width: 97.5%;
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #3065af;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #d8d8d8;
+}
+
+.employee-data {
+    color: #444;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 15px;   
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.employee-data .data-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-data .data-label {
+    font-weight: bold;
+}
+
+.employee-data .data-value {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* Dropdown menu style */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+.calender, .dropbtn{
+    font-size: 14px;
+}
+.dropbtn {
+    background-color: #3065af;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.dropbtn a{
+    text-decoration: none;
+    color: white;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3d7cca; /* Darker shade on hover */
+}
+.dropbtn i{
+    margin-left: 59px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3065af; /* Set the background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    padding-top: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-content a, .calender a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a{
+    font-size: 13px;
+}
+
+.dropdown-content a:hover, .calender a:hover {
+    background-color: #3d7cca; /* Darker shade on hover */
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.log-out {
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
+}
+
+.log-out a {
+    background-color: #3065af;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: block;
+    font-weight: 100;
+    transition: all 0.2s;
+}
+.log-out i{
+    margin-left: 4px;
+}
+
+.wrapper{
+    width: 850px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+ 
+  .days li.inactive{
+    color: #3065af49;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #3065af;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+  .current-date {
+    color: #3065af;
+  }
+
+
+
+  /* Existing CSS styles */
+
+/* Add a media query for screen widths up to 768px (e.g., tablets and mobiles) */
+@media screen and (max-width: 768px) {
+    .side-bar {
+      width: 100%;
+      position: relative;
+      height: auto;
+      padding-top: 0;
+    }
+    .main-body {
+      width: 100%;
+      float: none;
+    }
+    .wrapper {
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .header .title h1 {
+      font-size: 30px;
+    }
+    .header .sub-title h2 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Add a media query for screen widths up to 576px (e.g., small mobiles) */
+  @media screen and (max-width: 576px) {
+    .header .title h1 {
+      font-size: 25px;
+    }
+    .header .sub-title h2 {
+      font-size: 12px;
+    }
+    header .current-date {
+      font-size: 1rem;
+    }
+    .calendar li {
+      font-size: 0.9rem;
+    }
+    .icons span {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Add a media query for screen widths up to 320px (e.g., very small mobiles) */
+  @media screen and (max-width: 320px) {
+    .header .title h1 {
+      font-size: 22px;
+    }
+    .header .sub-title h2 {
+      font-size: 10px;
+    }
+    header .current-date {
+      font-size: 0.9rem;
+    }
+    .calendar li {
+      font-size: 0.85rem;
+    }
+    .icons span {
+      font-size: 1.4rem;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .log-out {
+      position: relative;
+      bottom: initial;
+      left: initial;
+      width: auto;
+      margin-top: 20px; /* Add margin to separate the log-out button from other options */
+    }
+  }

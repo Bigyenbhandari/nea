@@ -1,0 +1,100 @@
+/* Existing styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3065af;
+    color: white;
+}
+.header img {
+    height: 100px;
+    width: 100px;
+}
+.header h1 {
+    font-size: 45px;
+    font-weight: 100;
+}
+.header h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+}
+
+/* New styles for the grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for grid items */
+.grid-item:hover {
+    background-color: #e3e6eb;
+    color: black;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2; /* Match button background color with div background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+    top: 170%; /* Center the dropdown menu vertically */
+    left: 50%; /* Center the dropdown menu horizontally */
+    transform: translate(-50%, -50%); /* Center the dropdown menu precisely */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e3e6eb;
+
+   
+}
+
+/* Show dropdown content when hovering over the entire grid-item */
+.grid-item:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content  a{
+    font-size: 15px;
+}
